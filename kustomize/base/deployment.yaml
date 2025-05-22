@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yolo-detection
+  labels:
+    app: yolo-detection
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: yolo-detection
+  template:
+    metadata:
+      labels:
+        app: yolo-detection
+    spec:
+      containers:
+      - name: yolo-detection
+        image: luminoussg/yolo-detection:v1
+        ports:
+        - name: http
+          containerPort: 7860
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 1000m
+            memory: 2Gi
+          requests:
+            cpu: 500m
+            memory: 1Gi 
