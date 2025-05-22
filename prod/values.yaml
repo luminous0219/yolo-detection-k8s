@@ -5,15 +5,16 @@ app:
     repository: luminoussg/yolo-detection
     tag: v1
     pullPolicy: IfNotPresent
+  port: 7860
   
   # Resource limits and requests
   resources:
     limits:
-      cpu: 2000m
-      memory: 10Gi
-    requests:
       cpu: 1000m
-      memory: 5Gi
+      memory: 2Gi
+    requests:
+      cpu: 500m
+      memory: 1Gi
 
 # Git repository configuration for ArgoCD
 gitRepo:
