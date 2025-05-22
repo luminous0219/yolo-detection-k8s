@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     # IMPORTANT: Replace this with your actual Git repository URL
-    repoURL: https://github.com/yourusername/yolo-detection.git
+    repoURL: https://github.com/luminous0219/yolo-detection-k8s.git
     targetRevision: main
     path: prod
     helm:
