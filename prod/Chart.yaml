@@ -1,6 +1,0 @@
-apiVersion: v2
-name: yolo-detection
-description: A Helm chart for YOLO Detection application
-type: application
-version: 0.1.0
-appVersion: "v1" 
