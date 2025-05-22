@@ -15,6 +15,11 @@ app:
       cpu: 500m
       memory: 512Mi
 
+# Git repository configuration for ArgoCD
+gitRepo:
+  url: ""  # Set this to your actual Git repository URL
+  branch: "main"  # Set this to your desired branch
+
 # Replica count and autoscaling configuration
 replicaCount: 1
 autoscaling:
