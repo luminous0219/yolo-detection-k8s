@@ -12,5 +12,5 @@ commonLabels:
   app.kubernetes.io/instance: zzzz
 
 images:
-  - name: luminoussg/my-app
+  - name: luminoussg/yolo-detection:v1
     newTag: v1
