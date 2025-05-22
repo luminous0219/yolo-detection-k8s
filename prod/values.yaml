@@ -17,7 +17,7 @@ app:
 
 # Git repository configuration for ArgoCD
 gitRepo:
-  url: ""  # Set this to your actual Git repository URL
+  url: "https://github.com/luminous0219/yolo-detection-k8s.git"  # Set this to your actual Git repository URL
   branch: "main"  # Set this to your desired branch
 
 # Replica count and autoscaling configuration
